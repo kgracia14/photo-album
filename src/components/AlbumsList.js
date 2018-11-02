@@ -6,8 +6,8 @@ export default function AlbumsList(props) {
 
     <ul>
       { props.albums.map(album =>
-        <li key={album.id} onClick={() => props.selectAlbum(album.id)}>
-          { album.name }
+        <li key={album.id} >
+          { album.title }
         </li>
       ) }
     </ul>

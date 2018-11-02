@@ -1,3 +1,12 @@
 export default (state = [], action = {}) => {
-    return state
+  switch (action.type) {
+    case 'ADD_ALBUM':
+      return [
+      ...state,
+      action.payload
+    ]
+    default:
+      return state
+    }
   }
+
